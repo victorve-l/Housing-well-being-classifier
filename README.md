@@ -26,23 +26,23 @@ This project is not only a technical exercise in data science but also an applie
 
 
 
-3.- <a href="#data-collection-wrangling">Data collection and Wrangling 📁</a>
+3.- <a href="#data-collection-wrangling">Data collection and importation📁</a>
 
 
 
-4.- <a href="#exploratory-data-analysis">Exploratory Data Analysis (EDA)🔭</a>
+4.- <a href="#exploratory-data-analysis">Data transformation🔭</a>
 
 
 
-5.- <a href="#data-visualization">Data Visualization 📊</a>
+5.- <a href="#data-visualization">Exploratory data analysis (EDA) 📊</a>
 
 
 
-6.- <a href="#segmentation-k-means">Segmentation with K-means Clustering 📚</a>
+6.- <a href="#segmentation-k-means">Decision Trees 📚</a>
 
 
 
-7.- <a href="#time-series-forecasting">Time Series Forecasting 📈</a>
+7.- <a href="#time-series-forecasting">Random Forest 📈</a>
 
 
 
