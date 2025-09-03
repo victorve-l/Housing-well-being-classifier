@@ -34,7 +34,7 @@ This project is not only a technical exercise in data science but also an applie
 
 
 
-5.- <a href="#data-visualization">Exploratory data analysis (EDA) 📊</a>
+5.- <a href="#data-visualization">Decision Trees Modeling 🌳</a>
 
 
 
