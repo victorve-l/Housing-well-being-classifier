@@ -18,19 +18,19 @@ This project is not only a technical exercise in data science but also an applie
 
 <h2 id="project-structure">Project Structure</h2>
 
-1.- <a href="#introduction">Introduction ⚡</a>
+1.- <a href="#introduction">Introduction ✨</a>
 
 
 
-2.- <a href="#python-libraries">Python libraries and other methods used 🔍</a>
+2.- <a href="#python-libraries">Tooling & Libraries 🛠️</a>
 
 
 
-3.- <a href="#data-collection-wrangling">Data collection and importation📁</a>
+3.- <a href="#data-collection-wrangling">Data Acquisition & Cleaning 🧹</a>
 
 
 
-4.- <a href="#exploratory-data-analysis">Data transformation🔭</a>
+4.- <a href="#exploratory-data-analysis">Exploratory Data Analysis (EDA) 🧐</a>
 
 
 
@@ -38,15 +38,13 @@ This project is not only a technical exercise in data science but also an applie
 
 
 
-6.- <a href="#segmentation-k-means">Decision Trees 📚</a>
+6.- <a href="#segmentation-k-means">Random Forest Implementation 🚀</a>
 
 
 
-7.- <a href="#time-series-forecasting">Random Forest 📈</a>
+7.- <a href="#time-series-forecasting">Findings & Conclusions 💡</a>
 
 
-
-8.- <a href="#conclusions">Conclusions 📒</a>
 
 
 
