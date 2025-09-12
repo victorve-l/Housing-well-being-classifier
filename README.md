@@ -95,17 +95,28 @@ This project is not only a technical exercise in data science but also an applie
 
 <h2 id="data-collection-wrangling">Data Acquisition & Cleaning 🧹</h2>
 
-<p>The data collected pertains to the sales and profits of various cleaning products sold by several companies in Mexico (including Reckitt). These data were provided by EBAC and consisted of five .csv files</p>:
+<p>The data was obtained from the information programs section of INEGI and also from the microdata section of ENEIGH (https://www.inegi.org.mx/programas/enigh/nc/2024/). This section contains several tables in .csv format describing the socioeconomic characteristics of households, and the following were selected for this analysis:
+</p>:
 <ul style="font-size: 0.9em;">
-  <li><strong>• FACT_SALES :</strong> data related to product sales and profits.</li>
-  <li><strong>• DIM_PRODUCT :</strong> general product information</strong></li>
-  <li><strong>• DIM_SEGMENT :</strong> data on product format (liquid, powder, gel, etc.)</strong></li>
-  <li><strong>• DIM_CATEGORY :</strong> general category of the product</strong></li>
-  <li><strong>• DIM_CALENDAR :</strong> dates of the transactions</strong></li> 
+  <li><strong>• HOGARES : Characteristics of the households in which the members of the household live.</li>
+  <li><strong>• INGRESOS: Income and financial and capital gains of household members</strong></li>
+  <li><strong>• VIVIENDAS: Characteristics of the dwellings occupied by household members</strong></li>
+  <li><strong>• POBLACION: Sociodemographic characteristics of household members</strong></li>
+  <li><strong>• GASTOS_HOGAR: Household expenditure</strong></li> 
 </ul>
-Pandas was used to clean up and transform each file. At the end of this section, a single consolidated dataframe was obtained with the sales and profit data for each product including their descriptions and sales dates, respectively. The methods used are presented in the following table:
+This section on data import and transformation was divided into part 1 and part 2. In the first part, the most important variables from each table were selected. This part was very important, as some variables provide more information than others. For example, per capita income gives us much more information than the musical tastes of household members. 
 
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig1.jpg?raw=true" width="500" height="500" /></div>
+Before consolidating all the tables, several pandas methods were used to correct typos, convert data types (string to int), remove duplicate values, remove NaN values, among others. The most commonly used methods for making these modifications were as follows:
+<li><strong>• rename: rename columns or index labels. </li>
+<li><strong>• replace: replace specified values. </li>
+<li><strong>• astype: cast a pandas object to a specified dtype. </li>
+<li><strong>• groupby: group DataFrame using a mapper or by a series of columns. </li>
+<li><strong>• round: round rows to a specified number of decimals. </li>
+<li><strong>• isin: verify whether the elements of a dataFrame are present in a set of values (list, dictionary, etc.) and return a boolean result. </li>
+<li><strong>• fillna: fill missing values with a specified value. </li>
+<li><strong>• drop: eliminate a specific column or specific rows. </li>
+<li><strong>• isna: identify missing values. </li>
+<li><strong>• duplicate: identify duplicate values.</li>
 
 <a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/01_Data%20Collection%20and%20Wrangling/Data%20collection%20and%20wrangling.ipynb"> Full code for this section</a>
 <p><a href="#project-structure">Back to Project Structure</a></p>
