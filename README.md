@@ -101,7 +101,8 @@ This project is not only a technical exercise in data science but also an applie
   <li><strong>• INGRESOS: Income and financial and capital gains of household members</strong></li>
   <li><strong>• VIVIENDAS: Characteristics of the dwellings occupied by household members</strong></li>
   <li><strong>• POBLACION: Sociodemographic characteristics of household members</strong></li>
-  <li><strong>• GASTOS_HOGAR: Household expenditure</strong></li> 
+  <li><strong>• GASTOS_HOGAR: Household expenditure</strong></li>
+    </strong>
 </ul>
     
 <p>This section on data import and transformation was divided into part 1 and part 2. In the first part, the most important variables from each table were selected. This part was very important, as some variables provide more information than others. For example, per capita income gives us much more information than the musical tastes of household members. 
