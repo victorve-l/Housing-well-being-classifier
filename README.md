@@ -51,7 +51,7 @@ This project is not only a technical exercise in data science but also an applie
 
 <br>
 
-<h2 id="introduction">Introduction ⚡</h2>
+<h2 id="introduction">Introduction ✨</h2>
 
 <p>This project develops a Housing Well-being Classifier using data from the Mexican ENIGH survey. The goal is to predict household socioeconomic levels based on housing and living conditions, providing a practical application of machine learning in a real-world social context.</p>
 
@@ -64,7 +64,7 @@ This project is not only a technical exercise in data science but also an applie
 
 
 
-<h2 id="python-libraries">Python libraries and other methods used 🔍</h2>
+<h2 id="python-libraries">Tooling & Libraries 🛠️</h2>
 
 • Pandas  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="20" height="20" /></a>
 
@@ -93,7 +93,7 @@ This project is not only a technical exercise in data science but also an applie
 
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
-<h2 id="data-collection-wrangling">Data collection and Wrangling 📁</h2>
+<h2 id="data-collection-wrangling">Data Acquisition & Cleaning 🧹</h2>
 
 <p>The data collected pertains to the sales and profits of various cleaning products sold by several companies in Mexico (including Reckitt). These data were provided by EBAC and consisted of five .csv files</p>:
 <ul style="font-size: 0.9em;">
@@ -113,7 +113,7 @@ Pandas was used to clean up and transform each file. At the end of this section,
 
 
 
-<h2 id="exploratory-data-analysis">Exploratory Data Analysis (EDA)🔭</h2>
+<h2 id="exploratory-data-analysis">Exploratory Data Analysis (EDA) 🧐</h2>
 
 <p>In EDA, SQL Server was used to perform key queries and obtain general insights about the data. Some key findings were:</p>
 
@@ -131,7 +131,7 @@ Pandas was used to clean up and transform each file. At the end of this section,
 
 
 
-<h2 id="data-visualization">Data Visualization 📊</h2>
+<h2 id="data-visualization">Decision Trees Modeling 🌳</h2>
 
 <p>Data visualization related to reckit sales was performed using the matplotlib and seaborn libraries. According to the analysis, Vanish products (pre-washers and bleaches) have high and variable unit sales (products have been sold a higher number of times). In the case of Lysol, unit sales proved to be low but consistent (products have been sold a few times). </p>
 
@@ -155,7 +155,7 @@ Pandas was used to clean up and transform each file. At the end of this section,
 
 
 
-<h2 id="segmentation-k-means">Segmentation with K-means Clustering 📚</h2>
+<h2 id="segmentation-k-means">Random Forest Implementation 🚀</h2>
 
 <p>The K-means clustering algorithm was used to segment the products based on key variables such as total sales, total profits, product type, etc. Data was transformed using the following tools from scikit learn:</p>
 <ul style="font-size: 0.9em;">
@@ -180,7 +180,7 @@ Pandas was used to clean up and transform each file. At the end of this section,
 
 
 
-<h2 id="time-series-forecasting">Time Series Forecasting 📈</h2>
+<h2 id="time-series-forecasting">Findings & Conclusions </h2>
 
 <p>An ARIMA time series model was used to predict earnings, based on sales patterns observed in historical data. The variable TOTAL_VALUE_SALES was used, which represents the total value generated. A graph of historical Reckitt product earnings is shown below: </p>
 <div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig10.jpg" width="500" height="400" /></div>
