@@ -53,16 +53,14 @@ This project is not only a technical exercise in data science but also an applie
 
 <h2 id="introduction">Introduction ⚡</h2>
 
-<p>In this project, we will use Data Science to evaluate the current sales strategy of Reckitt's products. In particular, we will focus on Vanish (pre-washers and bleachers) and Lysol (sanitizers) products.</p>
+<p>This project develops a Housing Well-being Classifier using data from the Mexican ENIGH survey. The goal is to predict household socioeconomic levels based on housing and living conditions, providing a practical application of machine learning in a real-world social context.</p>
 
 <div style="display: flex; align-items: center;">
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://m.media-amazon.com/images/I/61F3YLj2edL._AC_UF1000,1000_QL80_.jpg" alt="Vanish" style="width:110px; margin-right: 6px;"> <img src="https://eu-images.contentstack.com/v3/assets/blt9ca8222b5acaa556/blte6b55f5dbea81dfb/67787bc5523bb9cc755b74f6/Lizol_-_MX_-_es-MX-3174222.png" alt="Lysol" style="width:200px;">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/portada_eneigh.jpg" width="300" height="300" />
 
 </div>
 
-<p>Why would we use a data science approach to study sales strategies? Because analyzing and processing large volumes of data will make possible to identify consumer behavior patterns, anticipate trends, improve sales efficiency, and optimize marketing strategies.</p>
-<p><a href="#project-structure">Back to Project Structure</a></p>
 
 
 <h2 id="python-libraries">Python libraries and other methods used 🔍</h2>
