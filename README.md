@@ -89,13 +89,6 @@ This project is not only a technical exercise in data science but also an applie
 
 
 
-• SQL Server  <a target="_blank" href="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" style="display: inline-block;"><img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="sql server" width="27" height="27" /></a>
-
-
-
-• Power BI  <a target="_blank" href="https://raw.githubusercontent.com/microsoft/PowerBI-Icons/main/SVG/PowerBI-Logo.svg" style="display: inline-block;"><img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg" alt="powerbi" width="20" height="20" /></a>
-
-
 
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
