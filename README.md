@@ -12,7 +12,7 @@ The Housing Well-being Classifier aims to predict the socioeconomic stratum of h
 This project is not only a technical exercise in data science but also an applied example of how machine learning can support evidence-based decision making in social and economic contexts.
 
 
-<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/Logo.png" width="300" height="300" /></div>
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/Logo.png" width="400" height="400" /></div>
 
 
 
