@@ -95,8 +95,7 @@ This project is not only a technical exercise in data science but also an applie
 
 <h2 id="data-collection-wrangling">Data Acquisition & Cleaning 🧹</h2>
 
-<p>The data was obtained from the information programs section of INEGI and also from the microdata section of ENEIGH (https://www.inegi.org.mx/programas/enigh/nc/2024/). This section contains several tables in .csv format describing the socioeconomic characteristics of households, and the following were selected for this analysis:
-</p>:
+<p>The data was obtained from the information programs section of INEGI and also from the microdata section of ENEIGH (https://www.inegi.org.mx/programas/enigh/nc/2024/). This section contains several tables in .csv format describing the socioeconomic characteristics of households, and the following were selected for this analysis:</p>
 <ul style="font-size: 0.9em;">
   <li><strong>• HOGARES : Characteristics of the households in which the members of the household live.</li>
   <li><strong>• INGRESOS: Income and financial and capital gains of household members</strong></li>
@@ -104,20 +103,23 @@ This project is not only a technical exercise in data science but also an applie
   <li><strong>• POBLACION: Sociodemographic characteristics of household members</strong></li>
   <li><strong>• GASTOS_HOGAR: Household expenditure</strong></li> 
 </ul>
-This section on data import and transformation was divided into part 1 and part 2. In the first part, the most important variables from each table were selected. This part was very important, as some variables provide more information than others. For example, per capita income gives us much more information than the musical tastes of household members. 
+    
+<p>This section on data import and transformation was divided into part 1 and part 2. In the first part, the most important variables from each table were selected. This part was very important, as some variables provide more information than others. For example, per capita income gives us much more information than the musical tastes of household members. 
 
-Before consolidating all the tables, several pandas methods were used to correct typos, convert data types (string to int), remove duplicate values, remove NaN values, among others. The most commonly used methods for making these modifications were as follows:
-<li><strong>• rename: rename columns or index labels. </li>
-<li><strong>• replace: replace specified values. </li>
-<li><strong>• astype: cast a pandas object to a specified dtype. </li>
-<li><strong>• groupby: group DataFrame using a mapper or by a series of columns. </li>
-<li><strong>• round: round rows to a specified number of decimals. </li>
-<li><strong>• isin: verify whether the elements of a dataFrame are present in a set of values (list, dictionary, etc.) and return a boolean result. </li>
-<li><strong>• fillna: fill missing values with a specified value. </li>
-<li><strong>• drop: eliminate a specific column or specific rows. </li>
-<li><strong>• isna: identify missing values. </li>
-<li><strong>• duplicate: identify duplicate values.</li>
-
+Before consolidating all the tables, several pandas methods were used to correct typos, convert data types (string to int), remove duplicate values, remove NaN values, among others. The most commonly used methods for making these modifications were as follows:</p>
+<ul style="font-size: 0.9em;">
+  <li><strong>• rename: rename columns or index labels. </li>
+  <li><strong>• replace: replace specified values. </li>
+  <li><strong>• astype: cast a pandas object to a specified dtype. </li>
+  <li><strong>• groupby: group DataFrame using a mapper or by a series of columns. </li>
+  <li><strong>• round: round rows to a specified number of decimals. </li>
+  <li><strong>• isin: verify whether the elements of a dataFrame are present in a set of values (list, dictionary, etc.) and return a boolean result. </li>
+  <li><strong>• fillna: fill missing values with a specified value. </li>
+  <li><strong>• drop: eliminate a specific column or specific rows. </li>
+  <li><strong>• isna: identify missing values. </li>
+  <li><strong>• duplicate: identify duplicate values.</li>
+</ul>
+    
 <a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/01_Data%20Collection%20and%20Wrangling/Data%20collection%20and%20wrangling.ipynb"> Full code for this section</a>
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
