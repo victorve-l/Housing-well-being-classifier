@@ -181,11 +181,13 @@ To build our decision tree model, we explored two node-splitting criteria:
 <li><strong>Gini:</strong> measures the impurity of a node; lower values indicate that the samples mostly belong to a single class.</li>
 <li><strong>Entropy:</strong> measures the uncertainty of a node using information theory; it seeks divisions that maximize the reduction in uncertainty.</li>
 
+
 Additionally, we used the max_depth parameter with different values. This allowed us to control the maximum depth of the tree and avoid overfitting, ensuring the model generalized better to new data. By testing different values, we found a balance between complexity and performance. Here, we present the metrics for the best results using gini and entropy criteria:
-<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/04_Decision%20Trees/gini_entropy_criteria.jpg" width="600" height="500" /></div>
+
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/04_Decision%20Trees/gini_entropy_criteria.jpg" width="800" height="700" /></div>
 
 According to metrics such as precision, recall, F1-score, and accuracy, the ideal maximum depth is equal to 3 for both criteria. For practical purposes, the Gini criterion was used to create the decision tree. Below is the decision tree created with the graphviz module: 
-<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/04_Decision%20Trees/stratum_tree.png" width="600" height="500" /></div
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/04_Decision%20Trees/stratum_tree.png" width="800" height="700" /></div
 </p>
 
 Let's dive a little deeper into class classification according to the decision tree using the Gini criterion:
