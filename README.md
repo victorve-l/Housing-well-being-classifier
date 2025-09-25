@@ -174,23 +174,27 @@ According to the graph, the high socioeconomic stratum has around 3 to 4 cars, w
 
 <h2 id="data-visualization">Decision Trees Modeling 🌳</h2>
 
-<p>Data visualization related to reckit sales was performed using the matplotlib and seaborn libraries. According to the analysis, Vanish products (pre-washers and bleaches) have high and variable unit sales (products have been sold a higher number of times). In the case of Lysol, unit sales proved to be low but consistent (products have been sold a few times). </p>
+<p>In this part, we begin our predictive analysis by applying Decision Trees as the first classification algorithm. Decision Trees are an excellent starting point because they are intuitive, easy to interpret, and capable of handling both numerical and categorical variables without extensive preprocessing. Moreover, they allow us to visualize how different household and housing characteristics contribute to socioeconomic stratification, which aligns with the objective of building a classifier for household living conditions. Although more complex models were used in further sections, Decision Trees provide a solid baseline and valuable insights into the structure of our data. 
 
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig3.jpg?raw=true" width="350" height="400" /></div>
+To build our decision tree model, we explored two node-splitting criteria:
 
-<p> Sales by region showed a distribution skewed to the right, meaning that in all regions products are sold in small quantities. Region 0 had the greatest variety of unit sales, while regions 2, 3, and 6 had the lowest concentration of sales. </p>
+<li><strong>Gini:</strong> measures the impurity of a node; lower values indicate that the samples mostly belong to a single class.</li>
+<li><strong>Entropy:</strong> measures the uncertainty of a node using information theory; it seeks divisions that maximize the reduction in uncertainty.</li>
 
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig6.jpg" width="600" height="400" /></div>
+Additionally, we used the max_depth parameter with different values. This allowed us to control the maximum depth of the tree and avoid overfitting, ensuring the model generalized better to new data. By testing different values, we found a balance between complexity and performance. Here, we present the metrics for the best results using gini and entropy criteria:
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/04_Decision%20Trees/gini_entropy_criteria.jpg" width="600" height="500" /></div>
 
-<p>With respect to the earnings performance of Reckitt products, the Vanish brand showed an increase in earnings between 2022-23, while earnings for Lysol products remained stable over the same period. </p>
+According to metrics such as precision, recall, F1-score, and accuracy, the ideal maximum depth is equal to 3 for both criteria. For practical purposes, the Gini criterion was used to create the decision tree. Below is the decision tree created with the graphviz module: 
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/04_Decision%20Trees/stratum_tree.png" width="600" height="500" /></div
+</p>
 
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig4a.jpg" width="700" height="280" /></div>
+Let's dive a little deeper into class classification according to the decision tree using the Gini criterion:
+<li><strong>Low stratum stratum:</strong> For a household to be classified as Low stratum, two key conditions must be met: The household has 3.5 or fewer electronic devices in total (total_dispositivos <= 3.5) and it has 0.5 or fewer cars (num_auto <= 0.5). If these two conditions are met, the model predicts with high certainty that the household is in the Low stratum.</li>
+<li><strong>Lower-middle stratum:</strong> The classification for this stratum is more complex, as it is found in several branches of the tree. The prediction is mainly based on the number of devices and cars. Path 1: total_dispositivos (total electronic devices) <= 3.5 and num_auto (total number of cars) > 0.5. In this branch, the model focuses on the number of devices. If the household has 0.5 or fewer electronic devices (total_dispositivos <= 0.5), the model classifies it as Lower-middle stratum. Path 2: total_dispositivos (total electronic devices) > 3.5 and total_dispositivos <= 8.5. For this branch, the model considers the number of cars. If the household has 1.5 or fewer cars (num_car <= 1.5), it is likely to be classified as Lower-middle stratum. </li>
+<li><strong>Upper-middle stratum:</strong> This stratum is also found in multiple branches, suggesting a pattern of higher asset ownership than the lower strata, but without reaching the highest level. Path 1: total_dispositivos (total electronic devices) <= 3.5, num_auto (total number of cars) > 0.5, and total_dispositivos > 0.5. In this branch, the model predicts Upper-middle stratum if the household has more than 0.5 cars, but still has 3.5 or fewer electronic devices. Path 2: total_dispositivos (total electronic devices) > 3.5, total_dispositivos <= 8.5, and num_auto (total number of cars) > 1.5. In this case, the model predicts Upper-middle stratum for households that have a higher number of devices (between 3.5 and 8.5) and more than 1.5 cars. </li>
+<li><strong>High stratum: </strong>total_dispositivos (total electronic devices) > 3.5 and 8.5, and num_auto (total number of cars) > 2.5, the model predicts this stratum with high certainty.</li>
 
-<p> Finally, an interactive dashboard was created in PowerBI where the total sales and profits of the Vanish and Lysol products, respectively, can be visualized. It is also possible to visualize total profits by region and by product type.</p>
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig5.jpg" width="700" height="220" /></div>
-
-<p><a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/03_Data%20Visualization/Data%20Visualization.ipynb"> Full code for this section</a></p>
-<p><a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/03_Data%20Visualization/Power_BI_Dashboard.pdf"> Dashboard Visualization</a></p>
+<p><a target="_blank" href="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/04_Decision%20Trees/04.%20Decision_Trees_Classifier_ENEIGH2024.ipynb"> Full code for this section</a></p>
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
 
