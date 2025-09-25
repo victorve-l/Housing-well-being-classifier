@@ -224,6 +224,8 @@ According to the graph, total_dispositivos, num_auto, ingreso_promedio, mat_piso
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
 <h2 id="time-series-forecasting">Findings & Conclusions </h2>
+<p>This study demonstrated the viability of using machine learning to predict socioeconomic strata based on housing and demographic data. By analyzing the ENIGH dataset, we built and evaluated several models, with the Random Forest algorithm providing the most insightful results.
 
-<p><a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Reckitt_DataScience_FinalPresentation.pdf">Link to presentation</a></p>
+The analysis revealed that material possessions, such as electronics and vehicles, and economic indicators like income and expenditure, are the most significant predictors of a household's well-being. The success of this classifier offers a promising avenue for streamlining the work of government agencies and researchers, allowing for a more dynamic and data-driven approach to understanding and addressing social inequality. Future work could involve incorporating more variables or deploying this model into a real-world application for public use.</p>
+
 <p><a href="#project-structure">Back to Project Structure</a></p>
