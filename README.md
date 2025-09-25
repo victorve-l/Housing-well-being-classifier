@@ -151,6 +151,14 @@ After variable selection, several pandas methods were used to correct typos, con
 
 According to the graph, our data showed an equal number of households according to socioeconomic stratum. This is the magic of SMOTE, the technique we previously applied to balance our number of records according to the socioecnomic stratum. </p>
 
+<p>Our 2nd question was how different is the average income between stratums? We constructed a boxplot using seaborn:
+
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/02_average_income_by_socioeconomic-stratum.png" width="600" height="500" /></div>
+Although it may seem obvious that the upper stratum tends to have higher incomes than the lower stratum, it is necessary to confirm this data. Now the question is: Why are there people in the lower socioeconomic stratum who have high average incomes and are still considered lower class? It should be noted that the socioeconomic stratum defined by the 2010 Population and Housing Census takes into account other variables related to housing characteristics to define the type of class. This is why there are people in the lower stratum who may have incomes similar to those of someone in the upper stratum.</p>
+<p></p>
+<p></p>
+<p></p>
+
 <a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/02_Exploratory%20Data%20Analysis%20(EDA)/Exploratory_Data_Analysis_SQL.sql"> Full code for this section</a>
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
