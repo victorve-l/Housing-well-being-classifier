@@ -97,7 +97,7 @@ This project is not only a technical exercise in data science but also an applie
 
 <p>The data was obtained from the information programs section of INEGI and also from the microdata section of ENEIGH (https://www.inegi.org.mx/programas/enigh/nc/2024/). This section contains several tables in .csv format describing the socioeconomic characteristics of households, and the following were selected for this analysis:</p>
 <ul style="font-size: 0.9em;">
-  <li><strong>• HOGARES : Characteristics of the households in which the members of the household live.</li>
+  <li><strong>• HOGARES :</strong> Characteristics of the households in which the members of the household live.
   <li><strong>• INGRESOS: Income and financial and capital gains of household members</strong></li>
   <li><strong>• VIVIENDAS: Characteristics of the dwellings occupied by household members</strong></li>
   <li><strong>• POBLACION: Sociodemographic characteristics of household members</strong></li>
