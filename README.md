@@ -209,49 +209,21 @@ According to the graph, the high socioeconomic stratum has around 3 to 4 cars, w
 
 <h2 id="segmentation-k-means">Random Forest Implementation 🚀</h2>
 
-<p>The K-means clustering algorithm was used to segment the products based on key variables such as total sales, total profits, product type, etc. Data was transformed using the following tools from scikit learn:</p>
-<ul style="font-size: 0.9em;">
-  <li><strong>• Target Encoder:</strong> transformation of categorical variables into numerical variables</li>
-  <li><strong>• Standard Scaler :</strong> data standarization</strong></li>
-  <li><strong>• PCA :</strong> Dimension reduction</strong></li>
-</ul>
+<p>After testing Decision Trees and obtaining promising results, we moved to Random Forest, an ensemble learning method that combines multiple decision trees to improve predictive performance and reduce overfitting. Random Forest is well-suited for our project because it can handle both categorical and numerical features, capture complex relationships, and provide more robust and stable predictions. The goal was to build a stronger classifier for socioeconomic strata by leveraging the power of multiple trees working together, thus achieving higher accuracy and generalizability. We will used the RandomForestClassifier module from sklearn and created 1,000 random trees. Finally, we used the same metrics as in the previous exercise, where we will look at metrics such as precision, recall, f1, andaccuracy:
 
-<p>The elbow method was applied to determine the optimal number of clusters. According to the graph, the optimal number is k=5.</p>
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig7.jpg" width="500" height="400" /></div>
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/05_Random%20Forest/metrics_randomforest.jpg" width="800" height="700" /></div>
 
-<p>Five clusters were identified using data reduced to 3 dimension by PCA and a value ok k=5. The clusters appear to be related to the number of units sold and total profits.</p>
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig8.jpg" width="600" height="500" /></div>
-<p>According to the cluster assignment, clusters 1 and 4 belong to products whose profits are 'low' (less than 1500 units). Cluster 3 belongs to products with intermediate profits (approximately 27 000 units). Clusters 0 and 2 belong to products that generated high profits (greater than 70,000 units). It should be noted that sales en these last groups were variable compared to others.</p>
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig9.jpg" width="600" height="450" /></div>
+According to the metrics generated with classification_report, the precission, recall, and f1-score of the algorithm increased, as did its overall precision. This means that Random Forest has been a good algorithm for developing the housing classifier according to the socioeconomic characteristics of the household. Finally, we determined which characteristics have been most important in creating our housing classifier. We used he feature_importances_ tool from RandomForestClassifier, which defined the importance of each feature in each tree based on the mean decrease in impurity (MDI). We also calculated the standard deviation of each attribute in each tree and finally generate a barplot to observe the 15 most important features:
+
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/05_Random%20Forest/feature_importance.png" width="800" height="700" /></div>
+
+According to the graph, total_dispositivos, num_auto, ingreso_promedio, mat_pisos_3, and est_alim are feature with the highest MDI. This means all those variables are considered as important features for the random forest classifier. It seems the total number of electronic devices, number of cars, average income per household, type of floor, and average food expenditure define the household conditions according to this classifier.
+</p>
+
+<p><a target="_blank" href="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/05_Random%20Forest/05.%20Random_Forest_ENEIGH2024.ipynb"> Full code for this section</a></p>
 <p><a href="#project-structure">Back to Project Structure</a></p>
-<p><a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/04_Segmentation%20with%20K-means%20Clustering/Segmentation%20with%20K-means%20Clustering.ipynb">Full code for this section</a></p>
-
-
-
-
-
-
 
 <h2 id="time-series-forecasting">Findings & Conclusions </h2>
-
-<p>An ARIMA time series model was used to predict earnings, based on sales patterns observed in historical data. The variable TOTAL_VALUE_SALES was used, which represents the total value generated. A graph of historical Reckitt product earnings is shown below: </p>
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig10.jpg" width="500" height="400" /></div>
-
-<p>Before performing the forecasts with ARIMA, the calculation of differencing between observations (Δyt=yt-yt-1) was applied and the Dickey-Fuller test was applied to obtain the optimal p value (optimal p=3):</p>
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig11.jpg" width="500" height="400" /></div>
-
-<p>To determine the hyper parameters of the ARIMA model, the Akaike Information Criterion (AIC) was used to compare different statistical models and select the most appropriate model (more detail on code). The ARIMA (3,1,1) model had the best score according to the AIC, and this model was used to make point predictions using the test database (orange line in the graph) and confidence intervals of the predictions using the test database.</p>
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig12.jpg" width="500" height="400" /></div>
-
-<p>A calculation of the point forecasts and confidence intervals over the next 8 weeks was also made using the ARIMA (3,1,1) model (more detail on code). Finally, to evaluate the accuracy of the model, the mean square error (MSE) and the mean absolute percentage error (MAPE) were calculated:</p>
-<ul style="font-size: 0.9em;">
-  <li><strong>• RMSE:</strong> 3724.72</li>
-  <li><strong>• MAPE:</strong> 7.98%</strong></li>
-</ul>
-
-<p>According to the ARIMA (3,1,1), a model with an RMSE of 3748 units and a MAPE of 8% was obtained, suggesting that this model is adequate to predict the future earnings of VANISH and LYSOL products.</p>
-<p><a href="#project-structure">Back to Project Structure</a></p>
-<p><a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/05_Time%20Series%20Forecasting/Time%20Series%20Forecasting.ipynb">Full code for this section</a></p>
 
 <p><a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Reckitt_DataScience_FinalPresentation.pdf">Link to presentation</a></p>
 <p><a href="#project-structure">Back to Project Structure</a></p>
