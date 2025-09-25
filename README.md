@@ -107,7 +107,7 @@ This project is not only a technical exercise in data science but also an applie
     
 <p>This section on data import and transformation was divided into part 1 and part 2. In the first part, the most important variables from each table were selected. This part had a huge relevance, as some variables provide more information than others. For example, per capita income gives us much more information than the musical preferences of household members. 
 
-Before consolidating all the tables, several pandas methods were used to correct typos, convert data types (string to int), remove duplicate values, remove NaN values, among others. The most commonly used methods for making these modifications were as follows:</p>
+After variable selection, several pandas methods were used to correct typos, convert data types (string to int), remove duplicate values, remove NaN values, among others. The most commonly used methods for making these modifications were as follows:</p>
 <ul style="font-size: 0.9em;">
   <li><strong>• rename:</strong> rename columns or index labels. </li>
   <li><strong>• replace:</strong> replace specified values. </li>
@@ -118,10 +118,29 @@ Before consolidating all the tables, several pandas methods were used to correct
   <li><strong>• fillna:</strong> fill missing values with a specified value. </li>
   <li><strong>• drop:</strong> eliminate a specific column or specific rows. </li>
   <li><strong>• isna:</strong> identify missing values. </li>
-  <li><strong>• duplicate: identify duplicate values.</li>
+  <li><strong>• duplicate:</strong> identify duplicate values.</li>
 </ul>
     
 <a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/01_Data%20Collection%20and%20Wrangling/Data%20collection%20and%20wrangling.ipynb"> Full code for this section</a>
+
+
+<p>Once the variables were selected, transformed, and consolidated into a single dataframe, some calculations and conversions were performed in the second part to facilitate subsequent analyses. Below is a summary of the changes made in this part:</p>
+<ul style="font-size: 0.9em;">
+  <li><strong>• Calculation of average income per household:</strong>the average was calculated based on monthly data and the amount recorded for each inhabitant. The data was saved in the variable average_income.</li>
+  <li><strong>• Conversion of binary variables:</strong> </li>
+  <li><strong>• Sum of electronic devices: </strong>a variable (total_devices) was created to add up the total number of electronic devices present in the home. Originally, the dataframe contained variables that gave us information such as the number of cell phones, number of laptops, number of computers, etc. per household.</li>
+  <li><strong>• Application of One-Hot Encoding:</strong>One-Hot Encoding is a technique used to convert categorical variables into a numerical format that machine learning algorithms can understand. Several of the categorical variables present were converted to numerical variables.</li>
+  <li><strong>• Application of the SMOTE technique:</strong>since we had an unbalanced number of records, we applied SMOTE to balance the number of records between classes. Instead of duplicating records from minority classes, SMOTE creates new, synthetic data based on existing records.</li>
+  <li><strong>• Renaming values in the socioeconomic stratum variable (est_socio):</strong>originally, this variable was coded with numbers from 1 to 4. In this dataframe, the data was renamed with strings to represent the socioeconomic stratum as “low socioe,” “lower-middle,” “upper-middle,” and “high,” respectively.</li>
+  <li><strong>• Renaming of entities:</strong>Mexican federal entities (states) were coded with numbers and were replaced with their respective names. </li>
+</ul>
+
+<img src="https://raw.githubusercontent.com/victorve-l/Housing-well-being-classifier/main/Templates/gif_dataframe.gif" alt="GIF de un DataFrame" width="500"/>
+
+
+
+
+
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
 
