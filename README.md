@@ -26,7 +26,7 @@ This project is not only a technical exercise in data science but also an applie
 
 
 
-3.- <a href="#data-collection-wrangling">Data Acquisition & Cleaning 🧹</a>
+3.- <a href="#data-collection-wrangling">Data Importation and Transformation 🧹</a>
 
 
 
@@ -93,7 +93,7 @@ This project is not only a technical exercise in data science but also an applie
 
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
-<h2 id="data-collection-wrangling">Data Acquisition & Cleaning 🧹</h2>
+<h2 id="data-collection-wrangling">Data Importation and Transformation 🧹</h2>
 
 <p>The data was obtained from the information programs section of INEGI and also from the microdata section of ENEIGH (https://www.inegi.org.mx/programas/enigh/nc/2024/). This section contains several tables in .csv format describing the socioeconomic characteristics of households, and the following were selected for this analysis:</p>
 <ul style="font-size: 0.9em;">
