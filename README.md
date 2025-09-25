@@ -147,7 +147,7 @@ After variable selection, several pandas methods were used to correct typos, con
 <h2 id="exploratory-data-analysis">Exploratory Data Analysis (EDA) 🧐</h2>
 
 <p>In the exploratory data analysis (EDA), our first goal was to see if our dataset is balanced or if there are some socioeconomic classes with few cases.
-<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/01_socioeconomic_stratum_distribution.png" width="500" height="300" /></div>
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/01_socioeconomic_stratum_distribution.png" width="600" height="500" /></div>
 
 According to the graph, our data showed an equal number of households according to socioeconomic stratum. This is the magic of SMOTE, the technique we previously applied to balance our number of records according to the socioecnomic stratum. </p>
 
