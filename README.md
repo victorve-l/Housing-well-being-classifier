@@ -155,11 +155,18 @@ According to the graph, our data showed an equal number of households according 
 
 <div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/02_average_income_by_socioeconomic-stratum.png" width="600" height="500" /></div>
 Although it may seem obvious that the upper stratum tends to have higher incomes than the lower stratum, it is necessary to confirm this data. Now the question is: Why are there people in the lower socioeconomic stratum who have high average incomes and are still considered lower class? It should be noted that the socioeconomic stratum defined by the 2010 Population and Housing Census takes into account other variables related to housing characteristics to define the type of class. This is why there are people in the lower stratum who may have incomes similar to those of someone in the upper stratum.</p>
-<p></p>
-<p></p>
-<p></p>
 
-<a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/02_Exploratory%20Data%20Analysis%20(EDA)/Exploratory_Data_Analysis_SQL.sql"> Full code for this section</a>
+<p>Next, we made a stacked bar chart to see how floor material changes depending on the socioeconomic stratum:
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/03_floor_material_by_socioeconomic_stratum.png" width="600" height="500" /></div>
+
+According to the stacked bar chart, the household floor material differs between socioeconomic strata. Dirt material is practically only present in low and lower-middle stratums, while wood or mosaic material are more common in higher stratums. </p>
+
+p>Finally, we wanted to compare car pocession according to socioenomic stratum: 
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/04_car_pocession_according_to_socioeconomic_stratum.png" width="600" height="500" /></div>
+According to the graph, the high socioeconomic stratum has around 3 to 4 cars, while the low stratum has practically 0 cars per household.</p>
+
+
+<a target="_blank" href="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/03_Exploratory%20Data%20Analysis/03.%20EDA.ipynb"> Full code for this section</a>
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
 
