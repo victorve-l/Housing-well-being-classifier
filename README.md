@@ -121,26 +121,24 @@ After variable selection, several pandas methods were used to correct typos, con
   <li><strong>• duplicate:</strong> identify duplicate values.</li>
 </ul>
     
-<a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/01_Data%20Collection%20and%20Wrangling/Data%20collection%20and%20wrangling.ipynb"> Full code for this section</a>
+<a target="_blank" href="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/01_Data%20Importation%20and%20Transformation%20Part%201/01.%20Data_Importation_and_Transformation_Part1.ipynb"> Full code for this section (Part 1)</a>
 
 
 <p>Once the variables were selected, transformed, and consolidated into a single dataframe, some calculations and conversions were performed in the second part to facilitate subsequent analyses. Below is a summary of the changes made in this part:</p>
 <ul style="font-size: 0.9em;">
-  <li><strong>• Calculation of average income per household:</strong>the average was calculated based on monthly data and the amount recorded for each inhabitant. The data was saved in the variable average_income.</li>
+  <li><strong>• Calculation of average income per household:</strong> the average was calculated based on monthly data and the amount recorded for each inhabitant. The data was saved in the variable average_income.</li>
   <li><strong>• Conversion of binary variables:</strong> </li>
-  <li><strong>• Sum of electronic devices: </strong>a variable (total_devices) was created to add up the total number of electronic devices present in the home. Originally, the dataframe contained variables that gave us information such as the number of cell phones, number of laptops, number of computers, etc. per household.</li>
-  <li><strong>• Application of One-Hot Encoding:</strong>One-Hot Encoding is a technique used to convert categorical variables into a numerical format that machine learning algorithms can understand. Several of the categorical variables present were converted to numerical variables.</li>
-  <li><strong>• Application of the SMOTE technique:</strong>since we had an unbalanced number of records, we applied SMOTE to balance the number of records between classes. Instead of duplicating records from minority classes, SMOTE creates new, synthetic data based on existing records.</li>
-  <li><strong>• Renaming values in the socioeconomic stratum variable (est_socio):</strong>originally, this variable was coded with numbers from 1 to 4. In this dataframe, the data was renamed with strings to represent the socioeconomic stratum as “low socioe,” “lower-middle,” “upper-middle,” and “high,” respectively.</li>
-  <li><strong>• Renaming of entities:</strong>Mexican federal entities (states) were coded with numbers and were replaced with their respective names. </li>
+  <li><strong>• Sum of electronic devices: </strong> a variable (total_devices) was created to add up the total number of electronic devices present in the home. Originally, the dataframe contained variables that gave us information such as the number of cell phones, number of laptops, number of computers, etc. per household.</li>
+  <li><strong>• Application of One-Hot Encoding:</strong> one-hot encoding is a technique used to convert categorical variables into a numerical format that machine learning algorithms can understand. Several of the categorical variables present were converted to numerical variables.</li>
+  <li><strong>• Application of the SMOTE technique:</strong> since we had an unbalanced number of records, we applied SMOTE to balance the number of records between classes. Instead of duplicating records from minority classes, SMOTE creates new, synthetic data based on existing records.</li>
+  <li><strong>• Renaming values in the socioeconomic stratum variable (est_socio):</strong> originally, this variable was coded with numbers from 1 to 4. In this dataframe, the data was renamed with strings to represent the socioeconomic stratum as “low socioe,” “lower-middle,” “upper-middle,” and “high,” respectively.</li>
+  <li><strong>• Renaming of entities:</strong> mexican federal entities (states) were coded with numbers and were replaced with their respective names. </li>
 </ul>
 
+<p>At the end of this part, a consolidated dataframe was obtained with 32 variables transformed and ready for further analysis:</p>
 <img src="https://raw.githubusercontent.com/victorve-l/Housing-well-being-classifier/main/Templates/gif_dataframe.gif" alt="GIF de un DataFrame" width="500"/>
 
-
-
-
-
+<a target="_blank" href="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/02_Data%20Importation%20and%20Transformation%20Part%202/02.%20Data_Importation_and_Transformation_Part2.ipynb"> Full code for this section (Part 2)</a>
 <p><a href="#project-structure">Back to Project Structure</a></p>
 
 
