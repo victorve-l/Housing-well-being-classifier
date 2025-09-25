@@ -146,15 +146,10 @@ After variable selection, several pandas methods were used to correct typos, con
 
 <h2 id="exploratory-data-analysis">Exploratory Data Analysis (EDA) 🧐</h2>
 
-<p>In EDA, SQL Server was used to perform key queries and obtain general insights about the data. Some key findings were:</p>
+<p>In the exploratory data analysis (EDA), our first goal was to see if our dataset is balanced or if there are some socioeconomic classes with few cases.
+<div align="center"><img src="https://github.com/victorve-l/Housing-well-being-classifier/blob/main/Templates/01_socioeconomic_stratum_distribution.png" width="500" height="300" /></div>
 
-<ul style="font-size: 0.9em;">
-  <li><strong>•Sales per category:</strong> Safe bleach products are the products with the highest sales and profits.</li>
-  <li><strong>•Sales per region:</strong> The areas TOTAL AUTOS SCANNING MEXICO (hereafter called region 0), area 2, and area 5 are the top 3 regions with the highest sales.</li>
-  <li><strong>•Sales per time period:</strong> Year 2022 generated higher revenues than year 2023.</li>
-</ul>
-
-<div align="center"><img src="https://github.com/victorve-l/Reckitt_EBAC/blob/main/Templates/Fig2.jpg?raw=true" width="500" height="300" /></div>
+According to the graph, our data showed an equal number of households according to socioeconomic stratum. This is the magic of SMOTE, the technique we previously applied to balance our number of records according to the socioecnomic stratum. </p>
 
 <a target="_blank" href="https://github.com/victorve-l/Reckitt_EBAC/blob/main/02_Exploratory%20Data%20Analysis%20(EDA)/Exploratory_Data_Analysis_SQL.sql"> Full code for this section</a>
 <p><a href="#project-structure">Back to Project Structure</a></p>
